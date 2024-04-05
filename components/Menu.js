@@ -4,8 +4,8 @@ const Menu = ({ isOpen, setIsOpen }) => {
   return (
     <div
       className={`menu w-96 py-4 px-5 absolute ${
-        isOpen ? "left-0" : "-left-full"
-      } top-0 bottom-0 transition-all duration-300 ease-in-out bg-white`}
+        isOpen ? "left-0" : " -left-96"
+      } top-0 bottom-0 transition-all duration-300 ease-in-out bg-white max-w-full`}
     >
       <div className="flex flex-col gap-8">
         <div className="flex justify-between items-center ">
