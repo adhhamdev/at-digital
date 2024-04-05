@@ -1,6 +1,11 @@
+"use client"
+
 import Button from "@/components/Button";
+import Menu from "@/components/Menu";
 import Image from "next/image";
+import { useState } from "react";
 export default function Home() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <main>
       <header className="flex flex-row justify-between items-center">
@@ -33,6 +38,7 @@ export default function Home() {
             CAREERS
           </a>
         </nav>
+        <Image src="/menu.svg" alt="menu" width={31} height={31} className="menu-icon mt-3" onClick={() => setIsOpen(true)} />
       </header>
       <section className="hero-section bg-hero bg-cover bg-left-bottom">
         <div className="hero absolute h-700 ">
@@ -40,6 +46,7 @@ export default function Home() {
           <Button text='GET FREE CONSULTATION' />
         </div>
       </section>
+      <Menu isOpen={isOpen} setIsOpen={setIsOpen} />
     </main>
   );
 }

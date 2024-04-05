@@ -12,7 +12,7 @@ nav {
     align-items: center;
 }
 
-nav a {
+a {
     font-weight: 500;
 }
 
@@ -30,7 +30,25 @@ nav a {
     width: 650px;
 }
 
+.menu {
+    display: none;
+}
+
+.menu a {
+    height: 28px;
+}
+
+.menu-icon {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
+    nav {
+        display: none !important;
+    }
+    .menu-icon {
+        display: block;
+    }
     .hero {
         top: 525px;
         right: 0;
@@ -39,6 +57,20 @@ nav a {
     }
     .hero-section {
         background-position: top;
+        height: 448px;
+    }
+    .menu {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    header {
+        padding: 26px 20px 26px 20px;
+    }
+   .hero {
+        top: 480px;
+        padding: 16px 24px 24px 24px;
     }
 }
 
