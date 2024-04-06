@@ -30,6 +30,28 @@ a {
     width: 650px;
 }
 
+h2 {
+    font-weight: 600;
+    color: #6B3CC9;
+}
+
+.service-image {
+    margin-right: 108px;
+}
+
+.service {
+    margin: 188px auto;
+}
+
+.service-text {
+    width: 542px;
+}
+
+.service-text p {
+
+    font-weight: 400;
+}
+
 .menu {
     display: none;
 }
@@ -62,6 +84,12 @@ a {
     .menu {
         display: block;
     }
+    .service {
+        margin: 40px auto;
+    }
+    .service-image {
+        margin-right: 20px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -74,7 +102,7 @@ a {
     }
 }
 
-.hero button {
+button {
     font-weight: 700;
     background-color: #F28D35;
 }
