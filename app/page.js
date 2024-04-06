@@ -59,13 +59,13 @@ export default function Home() {
           <Button text="GET FREE CONSULTATION" />
         </div>
       </section>
-      <section className=" mx-48 my-20 flex justify-center items-center">
+      <section className="service my-20 flex justify-center items-center">
         <Image
           src="/computer.png"
           alt="hero"
           width={414}
           height={414}
-          className=" mr-28"
+          className="service-image-1"
         />
         <div className="service-text">
           <h2 className={`text-2xl ${poppins.className}`}>Web & Mobile App Development</h2>
@@ -73,19 +73,19 @@ export default function Home() {
           <Button text="LEARN MORE" />
         </div>
       </section>
-      <section className="service my-20 flex justify-center items-center">
-        <Image
-          src="/computer.png"
-          alt="hero"
-          width={414}
-          height={414}
-          className="service-image"
-        />
+      <section className="service service-2 my-20 flex justify-center items-center">
         <div className="service-text">
-          <h2 className={`text-2xl ${poppins.className}`}>Web & Mobile App Development</h2>
-          <p className=" text-base mt-5 mb-2">Your web and mobile Apps are pieces of the puzzle to grow your business. We use frameworks which tailor content and engagement methods to respond to different intents shown by your potential customers who interact with your business online.</p>
+          <h2 className={`text-2xl ${poppins.className}`}>Digital Strategy Consulting</h2>
+          <p className=" text-base mt-5 mb-2">Your digital strategy should complement the overall marketing strategy of the company. In online marketing, each component will never work in isolation and every business needs a different mix. We provide a clear concept and strategic overview to find the most efficient model for your business.</p>
           <Button text="LEARN MORE" />
         </div>
+        <Image
+          src="/magnifier.png"
+          alt="hero"
+          width={346}
+          height={346}
+          className="service-image-2"
+        />
       </section>
       <Menu isOpen={isOpen} setIsOpen={setIsOpen} />
     </main>

@@ -35,12 +35,12 @@ h2 {
     color: #6B3CC9;
 }
 
-.service-image {
+.service-image-1 {
     margin-right: 108px;
 }
 
-.service {
-    margin: 188px auto;
+.service-image-2 {
+    margin-left: 108px;
 }
 
 .service-text {
@@ -85,10 +85,16 @@ h2 {
         display: block;
     }
     .service {
-        margin: 40px auto;
+        margin: 400px 40px auto 40px;
     }
-    .service-image {
+    .service-image-1 {
         margin-right: 20px;
+    }
+    .service-image-2 {
+        margin-left: 20px;
+    }
+    .service-text {
+        width: 393px;
     }
 }
 
@@ -99,6 +105,15 @@ h2 {
    .hero {
         top: 480px;
         padding: 16px 24px 24px 24px;
+    }
+    .service {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .service-2 {
+        margin: 60px auto;
+        flex-direction: column-reverse;
     }
 }
 
