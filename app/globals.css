@@ -194,6 +194,10 @@ footer a {
         padding: 16px 24px 24px 24px;
     }
 
+    .hero h1 {
+        font-size: 28px;
+    }
+
     .service {
         margin: initial 20px;
         display: flex;
