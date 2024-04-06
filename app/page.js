@@ -49,7 +49,7 @@ export default function Home() {
           <Button text="GET FREE CONSULTATION" />
         </div>
       </section>
-      <section id="servie-1" className="service my-20 flex justify-center items-center">
+      <section id="service-1" className="service my-20 flex justify-center items-center">
         <Image
           src="/computer.png"
           alt="hero"
