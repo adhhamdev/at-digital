@@ -5,6 +5,7 @@ import Button from "@/components/Button";
 import Menu from "@/components/Menu";
 import Image from "next/image";
 import { useState } from "react";
+import FAQItem from "@/components/FAQItem";
 
 const poppins = Poppins({ subsets: ["latin"], weight: "600" });
 export default function Home() {
@@ -68,15 +69,30 @@ export default function Home() {
           className="service-image-1"
         />
         <div className="service-text">
-          <h2 className={`text-2xl ${poppins.className}`}>Web & Mobile App Development</h2>
-          <p className=" text-base mt-5 mb-2">Your web and mobile Apps are pieces of the puzzle to grow your business. We use frameworks which tailor content and engagement methods to respond to different intents shown by your potential customers who interact with your business online.</p>
+          <h2 className={`text-2xl ${poppins.className}`}>
+            Web & Mobile App Development
+          </h2>
+          <p className=" text-base mt-5 mb-2">
+            Your web and mobile Apps are pieces of the puzzle to grow your
+            business. We use frameworks which tailor content and engagement
+            methods to respond to different intents shown by your potential
+            customers who interact with your business online.
+          </p>
           <Button text="LEARN MORE" />
         </div>
       </section>
       <section className="service service-2 my-20 flex justify-center items-center">
         <div className="service-text">
-          <h2 className={`text-2xl ${poppins.className}`}>Digital Strategy Consulting</h2>
-          <p className=" text-base mt-5 mb-2">Your digital strategy should complement the overall marketing strategy of the company. In online marketing, each component will never work in isolation and every business needs a different mix. We provide a clear concept and strategic overview to find the most efficient model for your business.</p>
+          <h2 className={`text-2xl ${poppins.className}`}>
+            Digital Strategy Consulting
+          </h2>
+          <p className=" text-base mt-5 mb-2">
+            Your digital strategy should complement the overall marketing
+            strategy of the company. In online marketing, each component will
+            never work in isolation and every business needs a different mix. We
+            provide a clear concept and strategic overview to find the most
+            efficient model for your business.
+          </p>
           <Button text="LEARN MORE" />
         </div>
         <Image
@@ -86,6 +102,16 @@ export default function Home() {
           height={346}
           className="service-image-2"
         />
+      </section>
+      <section className="faq">
+        <h2 className={`text-2xl text-center mb-7 ${poppins.className}`}>
+          Frequently asked questions
+        </h2>
+        <div className="faq-items flex flex-col border border-dashed rounded">
+          <FAQItem />
+          <FAQItem />
+          <FAQItem />
+        </div>
       </section>
       <Menu isOpen={isOpen} setIsOpen={setIsOpen} />
     </main>

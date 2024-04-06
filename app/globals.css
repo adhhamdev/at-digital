@@ -64,6 +64,36 @@ h2 {
     display: none;
 }
 
+button {
+    font-weight: 700;
+    background-color: #F28D35;
+}
+
+.faq {
+    margin: 80px 297px;
+}
+
+.faq-items {
+    border-color: #9747FF;
+}
+
+.faq-item h3 {
+    font-weight: 500;
+}
+.faq-item.open h3 {
+    color: #6B3CC9;
+}
+
+.faq-item p {
+    color: #6F6C90;
+}
+
+@media screen and (max-width: 1200px) {
+    .faq {
+        margin: 80px 150px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     nav {
         display: none !important;
@@ -98,6 +128,9 @@ h2 {
     .service-text {
         width: 393px;
     }
+    .faq {
+        margin: 80px 42px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -121,9 +154,4 @@ h2 {
     .service-text {
         width: 335px;
     }
-}
-
-button {
-    font-weight: 700;
-    background-color: #F28D35;
 }
