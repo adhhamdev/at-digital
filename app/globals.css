@@ -106,6 +106,10 @@ footer h3 {
     font-size: 14px;
 }
 
+footer a {
+    width: fit-content;
+}
+
 .footer-bottom {
     padding-top: 8px;
     margin: 0 auto;
@@ -196,7 +200,6 @@ footer h3 {
         flex-direction: column;
         text-align: center;
     }
-
     .service-2 {
         margin: 60px 20px;
         flex-direction: column-reverse;
