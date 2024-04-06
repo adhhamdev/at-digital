@@ -5,7 +5,7 @@ const FAQItem = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className={`${isOpen && 'open'} faq-item p-6 my-4 cursor-pointer`} onClick={() => setIsOpen(!isOpen)}>
-      <h3 className={`text-xl flex justify-between items-center ${isOpen && 'mb-3'}`}>
+      <h3 className={`text-xl flex justify-between items-start ${isOpen && 'mb-3'}`}>
         <span>
           Lorem ipsum dolor sit amet consectetur. Leo at sit eu libero?
         </span>
@@ -14,6 +14,7 @@ const FAQItem = () => {
           alt=""
           width={14}
           height={28}
+          className=" ml-10 mt-2"
         />
       </h3>
       {isOpen && <p className="text-base">

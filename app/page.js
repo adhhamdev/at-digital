@@ -6,6 +6,7 @@ import Menu from "@/components/Menu";
 import Image from "next/image";
 import { useState } from "react";
 import FAQItem from "@/components/FAQItem";
+import Logo from "@/components/Logo";
 
 const poppins = Poppins({ subsets: ["latin"], weight: "600" });
 export default function Home() {
@@ -13,20 +14,8 @@ export default function Home() {
   return (
     <main>
       <header className="flex flex-row justify-between items-center">
-        <div className="flex items-end">
-          <Image
-            src="/logo.png"
-            alt="AT Digital"
-            width={36.11}
-            height={36.11}
-            className=" mr-3"
-          />
-          <Image
-            src="/logo-text.svg"
-            alt="AT Digital"
-            width={140}
-            height={25}
-          />
+        <div>
+          <Logo />
         </div>
         <nav className="flex items-end gap-7 pt-3">
           <a href="" className="text-sm text-white">
@@ -107,12 +96,36 @@ export default function Home() {
         <h2 className={`text-2xl text-center mb-7 ${poppins.className}`}>
           Frequently asked questions
         </h2>
-        <div className="faq-items flex flex-col border border-dashed rounded">
+        <div className="faq-items flex flex-col">
           <FAQItem />
           <FAQItem />
           <FAQItem />
         </div>
       </section>
+      <footer className="flex flex-col justify-between text-white">
+        <div className="mb-10 flex justify-between flex-wrap">
+          <div className="footer-company">
+            <Logo />
+            <p className="mt-5">Your goal is our target. Not anything in between. We use online marketing platforms and tools to achieve single objective - your business results.</p>
+          </div>
+          <div className="footer-techs">
+            <h3>Our Technologies</h3>
+            <a href="">ReactJS</a>
+            <a href="">Gatsby</a>
+            <a href="">NextJS</a>
+            <a href="">NodeJS</a>
+          </div>
+          <div className="footer-services">
+            <h3>Our Services</h3>
+            <a href="">Social Media Marketing</a>
+            <a href="">Web & Mobile App Development</a>
+            <a href="">Data Analytics</a>
+          </div>
+        </div>
+        <div className="footer-bottom text-center text-sm border-t-2">
+          Privacy Poilcy | Terms & Conditions
+        </div>
+      </footer>
       <Menu isOpen={isOpen} setIsOpen={setIsOpen} />
     </main>
   );

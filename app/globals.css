@@ -73,10 +73,6 @@ button {
     margin: 80px 297px;
 }
 
-.faq-items {
-    border-color: #9747FF;
-}
-
 .faq-item h3 {
     font-weight: 500;
 }
@@ -86,6 +82,32 @@ button {
 
 .faq-item p {
     color: #6F6C90;
+}
+
+footer {
+    padding: 40px 80px 20px 80px;
+    background-color: #6B3CC9;
+}
+
+.footer-company {
+    width: 413px;
+}
+
+footer h3 {
+    font-weight: 600;
+    font-size: 21px;
+}
+
+.footer-techs a , .footer-services a {
+    margin: 6px 0;
+    display: block;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    padding-top: 8px;
+    margin: 0 auto;
+    width: 630px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -131,6 +153,15 @@ button {
     .faq {
         margin: 80px 42px;
     }
+    footer {
+        height: 428px;
+    }
+    .footer-services, .footer-techs {
+        margin-top: 60px;
+    }
+    .footer-bottom {
+        width: 630px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -153,5 +184,14 @@ button {
     }
     .service-text {
         width: 335px;
+    }
+    footer {
+        padding: 40px 20px 20px 20px;
+    }
+    footer > div {
+        flex-direction: column;
+    }
+    .footer-bottom {
+        width: 257px;
     }
 }
