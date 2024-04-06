@@ -123,7 +123,7 @@ export default function Home() {
           </div>
         </div>
         <div className="footer-bottom text-center text-sm border-t-2">
-          Privacy Poilcy | Terms & Conditions
+          <a href="">Privacy Poilcy</a> | <a href="">Terms & Conditions</a>
         </div>
       </footer>
       <Menu isOpen={isOpen} setIsOpen={setIsOpen} />

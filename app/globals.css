@@ -76,6 +76,7 @@ button {
 .faq-item h3 {
     font-weight: 500;
 }
+
 .faq-item.open h3 {
     color: #6B3CC9;
 }
@@ -98,7 +99,8 @@ footer h3 {
     font-size: 21px;
 }
 
-.footer-techs a , .footer-services a {
+.footer-techs a,
+.footer-services a {
     margin: 6px 0;
     display: block;
     font-size: 14px;
@@ -120,47 +122,61 @@ footer h3 {
     nav {
         display: none !important;
     }
+
     .menu-icon {
         display: block;
     }
+
     .hero {
         top: 525px;
         right: 0;
         left: 0;
         width: auto;
     }
+
     .hero-section {
         background-position: top;
         height: 448px;
     }
+
     .menu {
         display: block;
     }
+
     .service {
         margin: 400px 40px auto 40px;
     }
+
     .service-image-1 {
         width: 275px;
         margin-right: 20px;
     }
+
     .service-image-2 {
         width: 275px;
         margin-left: 20px;
     }
+
     .service-text {
         width: 393px;
     }
+
     .faq {
         margin: 80px 42px;
     }
+
     footer {
-        height: 428px;
+        height: auto;
     }
-    .footer-services, .footer-techs {
+
+    .footer-services,
+    .footer-techs {
+        width: 100%;
         margin-top: 60px;
     }
+
     .footer-bottom {
-        width: 630px;
+        width: 400px;
     }
 }
 
@@ -168,30 +184,40 @@ footer h3 {
     header {
         padding: 26px 20px 26px 20px;
     }
-   .hero {
+
+    .hero {
         top: 480px;
         padding: 16px 24px 24px 24px;
     }
+
     .service {
         margin: initial 20px;
         display: flex;
         flex-direction: column;
         text-align: center;
     }
+
     .service-2 {
         margin: 60px 20px;
         flex-direction: column-reverse;
     }
+
     .service-text {
         width: 335px;
     }
+
     footer {
+        height: auto;
         padding: 40px 20px 20px 20px;
     }
-    footer > div {
-        flex-direction: column;
+
+    .footer-company,
+    .footer-services,
+    .footer-techs, .footer-bottom {
+        width: 100%;
     }
-    .footer-bottom {
-        width: 257px;
+
+    footer>div {
+        flex-direction: column;
     }
 }
