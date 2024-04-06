@@ -200,6 +200,10 @@ footer a {
         flex-direction: column;
         text-align: center;
     }
+
+    #service-1 {
+        margin: 400px 20px auto 20px;
+    }
     
     .service-2 {
         margin: 60px 20px;
